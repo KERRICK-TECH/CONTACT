@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#08090b">
+<meta name="description" content="KERRICK TECH private social contact portal.">
+<title>KERRICK TECH | Contact Portal</title>
+<style>
+:root{--gold:#e0b75b;--gold2:#f4d990;--bg:#08090b;--panel:#101114;--muted:#a3a4aa;--line:#302719}
+*{box-sizing:border-box}html{min-height:100%;background:var(--bg)}body{margin:0;min-height:100vh;padding:28px 16px;display:flex;align-items:center;justify-content:center;color:#f7f5ef;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;background:radial-gradient(ellipse at 50% 0%,#392b13 0%,transparent 42%),var(--bg)}
+main{width:100%;max-width:440px}.brand{text-align:center;margin:0 auto 22px}.logo{display:block;width:min(100%,280px);height:auto;object-fit:contain;margin:0 auto 12px;filter:drop-shadow(0 12px 25px #0009)}.eyebrow{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-top:8px}.card{background:linear-gradient(145deg,#151619,#0d0e10);border:1px solid var(--line);border-radius:20px;padding:25px 21px;box-shadow:0 24px 70px #0008}.card h1{font-size:22px;line-height:1.25;margin:0 0 9px;letter-spacing:-.4px}.desc{font-size:13px;line-height:1.65;color:var(--muted);margin:0 0 22px}label{display:block;color:var(--gold2);font-size:11px;font-weight:700;letter-spacing:1.4px;margin:0 0 9px}input{width:100%;background:#090a0c;color:#fff;border:1px solid #383838;border-radius:10px;padding:15px 14px;font-size:15px;outline:none}input:focus{border-color:var(--gold);box-shadow:0 0 0 3px #e0b75b18}.btn{display:flex;align-items:center;justify-content:center;width:100%;margin-top:13px;padding:14px 16px;border:0;border-radius:10px;background:linear-gradient(105deg,#b88932,#f3d58e);color:#151108;font-weight:800;font-size:12px;letter-spacing:1.2px;text-decoration:none;cursor:pointer}.btn:focus-visible,.social:focus-visible{outline:2px solid var(--gold2);outline-offset:3px}.error{min-height:17px;margin:12px 0 0;color:#ff8585;font-size:12px}#contacts{display:none}.social{display:flex;align-items:center;gap:13px;padding:13px 12px;margin-top:10px;border:1px solid #2c2b28;background:#0b0c0e;border-radius:12px;color:#f7f5ef;text-decoration:none;transition:border-color .18s,transform .18s}.social:hover{border-color:#a98543;transform:translateY(-1px)}.social-icon{flex:0 0 42px;width:42px;height:42px;display:grid;place-items:center;border-radius:11px;background:#211b10;border:1px solid #48371b;color:var(--gold2);font-weight:800;font-size:12px}.social-info{flex:1;min-width:0}.social-info strong{display:block;font-size:14px;margin-bottom:4px}.social-info small{display:block;color:var(--muted);font-size:11px}.arrow{color:var(--gold);font-size:19px}.lock{margin-top:17px;background:transparent;color:var(--gold2);border:1px solid #514124}.foot{text-align:center;color:#777;font-size:10px;letter-spacing:.4px;line-height:1.8;margin:18px 0 0}.foot strong{color:var(--gold)}.note{font-size:10px;line-height:1.5;color:#777;text-align:center;margin-top:14px}.hidden{display:none!important}@media(max-width:360px){.card{padding:21px 16px}.logo{width:min(100%,240px)}}
+</style>
+</head>
+<body>
+<main>
+  <header class="brand">
+    <img class="logo" src="kerrick-tech-logo.webp" alt="KERRICK TECH gold developer logo">
+    <div class="eyebrow">Private Contact Portal</div>
+  </header>
+
+  <section class="card" id="login" aria-labelledby="login-title">
+    <h1 id="login-title">Restricted Access</h1>
+    <p class="desc">Welcome to my contact portal. Enter the access password to view my official social platforms.</p>
+    <form id="passwordForm">
+      <label for="password">ACCESS PASSWORD</label>
+      <input id="password" type="password" placeholder="Enter your password" autocomplete="current-password" required>
+      <button class="btn" type="submit">UNLOCK CONTACTS <span aria-hidden="true">&nbsp;↗</span></button>
+      <p class="error" id="message" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <section class="card" id="contacts" aria-labelledby="contacts-title">
+    <h1 id="contacts-title">Connect with Kerrick</h1>
+    <p class="desc">Choose your preferred platform below.</p>
+
+    <a class="social" href="https://wa.me/2347014748693" target="_blank" rel="noopener noreferrer">
+      <span class="social-icon" aria-hidden="true">WA</span><span class="social-info"><strong>WhatsApp</strong><small>Chat with me directly</small></span><span class="arrow" aria-hidden="true">↗</span>
+    </a>
+    <a class="social" href="https://t.me/Kerricktech" target="_blank" rel="noopener noreferrer">
+      <span class="social-icon" aria-hidden="true">TG</span><span class="social-info"><strong>Telegram</strong><small>Message me on Telegram</small></span><span class="arrow" aria-hidden="true">↗</span>
+    </a>
+    <a class="social" href="https://www.tiktok.com/@kerricktech" target="_blank" rel="noopener noreferrer">
+      <span class="social-icon" aria-hidden="true">TT</span><span class="social-info"><strong>TikTok</strong><small>Watch my videos</small></span><span class="arrow" aria-hidden="true">↗</span>
+    </a>
+    <a class="social" href="https://www.facebook.com/kerrick.john.idiong?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
+      <span class="social-icon" aria-hidden="true">FB</span><span class="social-info"><strong>Facebook</strong><small>Connect with me</small></span><span class="arrow" aria-hidden="true">↗</span>
+    </a>
+    <button class="btn lock" id="lockButton" type="button">LOCK CONTACTS</button>
+  </section>
+
+  <footer class="foot"><strong>KERRICK TECH</strong><br>CODE · CREATE · SOLVE · INNOVATE<br>© 2026 Kerrick Tech</footer>
+  <p class="note">Demo-style password gate only. The password and links can be found in the page source; this is not secure authentication.</p>
+</main>
+<script>
+// HTML-only demo password gate. Do not use for sensitive information.
+const ACCESS_PASSWORD = "#kerrick_Access_con";
+const login = document.getElementById("login");
+const contacts = document.getElementById("contacts");
+const passwordInput = document.getElementById("password");
+const message = document.getElementById("message");
+
+document.getElementById("passwordForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  if (passwordInput.value === ACCESS_PASSWORD) {
+    login.style.display = "none";
+    contacts.style.display = "block";
+    passwordInput.value = "";
+    message.textContent = "";
+  } else {
+    message.textContent = "Incorrect password. Please try again.";
+    passwordInput.value = "";
+  }
+});
+
+document.getElementById("lockButton").addEventListener("click", function() {
+  contacts.style.display = "none";
+  login.style.display = "block";
+  passwordInput.value = "";
+  message.textContent = "";
+});
+</script>
+</body>
+</html>
